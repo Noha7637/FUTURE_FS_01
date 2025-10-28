@@ -41,7 +41,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: #0b0c10;
+  background: #0b0c1056;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -305,16 +305,46 @@ li img {
   color: var(--primary-color);
 }
 
-.educbox {
+.educbox,
+.highschoolbox {
   display: flex;
   width: 50%;
   gap: 3rem;
   margin-top: 5rem;
-  box-shadow: 0 0 5px -3px var(--highlight-color);
+  box-shadow: 0 0 10px -2px var(--highlight-color);
   padding: 3rem;
+  border-radius: 20px;
 }
 
-.educbox img {
+.educbox:hover,
+.highschoolbox:hover {
+  transform: translateY(-8px);
+}
+
+.educbox img,
+.highschoolbox img {
   width: 90px;
   height: auto;
+}
+
+.highschoolbox img {
+  border-radius: 15px;
+}
+
+.educbox h3,
+.highschoolbox h3 {
+  color: var(--primary-color);
+  font-size: 2.4rem;
+}
+
+.educbox .p1,
+.educbox .p2,
+.highschoolbox .p1,
+.highschoolbox .p2 {
+  color: rgb(142, 137, 137);
+  font-family: monospace;
+}
+.educbox .p3,
+.highschoolbox .p3 {
+  margin-top: 2rem;
 }
