@@ -45,7 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (statusEl) statusEl.textContent = "Sending...";
 
     emailjs
-      .sendForm("IROy-XIXtKU0FyZUJ", "template_9cm4i4a", form) // e.g. ('service_123abc','template_456xyz')
+      .sendForm(
+        "service_nqk4s08",
+        "template_9cm4i4a",
+        e.target,
+        "Ft6-A7OAuZf2BgA-k"
+      ) // e.g. ('service_123abc','template_456xyz')
       .then(function () {
         if (statusEl) statusEl.textContent = "Message sent successfully!";
         form.reset();
