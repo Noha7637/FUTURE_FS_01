@@ -32,6 +32,10 @@
     max-width: 46%;
     flex: 1 1 46%;
   }
+  .skills h3,
+  .education h2 {
+    text-align: center;
+  }
 
   .educbox,
   .highschoolbox {
@@ -42,7 +46,7 @@
 /* Tablets */
 @media (max-width: 992px) {
   html {
-    font-size: 53%;
+    font-size: 59%;
   }
 
   .header {
@@ -58,8 +62,17 @@
     text-align: center;
   }
 
+  .typing {
+    position: static;
+    border-right: none;
+    white-space: normal;
+    animation: none;
+    width: auto;
+    padding-left: 0;
+  }
+
   .home-img {
-    width: 50%;
+    width: 30%;
   }
 
   .home-img img {
@@ -81,7 +94,7 @@
 
   .skills h3,
   .education h2 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 
   .educbox,
@@ -124,9 +137,10 @@
     align-items: center;
     gap: 1.6rem;
     padding: 1.6rem 0;
-    background: rgba(11, 12, 16, 0.95);
-    backdrop-filter: blur(14px) saturate(180%);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0b0c1056;
+    z-index: 4000;
+    backdrop-filter: blur(24px);
+
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   }
 
@@ -143,7 +157,7 @@
 /* Large phones / small tablets */
 @media (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 53%;
   }
 
   .navbar {
@@ -175,7 +189,7 @@
   }
 
   .home-img {
-    width: 50%;
+    width: 30%;
   }
 
   .skills-container {
@@ -186,6 +200,11 @@
   .backend,
   .tools {
     width: 100%;
+  }
+
+  .skills h3,
+  .education h2 {
+    text-align: center;
   }
 
   .educbox,
@@ -227,7 +246,7 @@
   }
 
   .home-img {
-    width: 88%;
+    width: 30%;
   }
 
   .social-media a {
