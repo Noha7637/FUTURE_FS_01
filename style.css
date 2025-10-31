@@ -353,6 +353,16 @@ li img {
   margin-top: 2rem;
 }
 
+/* _________projects section___________ */
+
+/* Optional: single column on small screens */
+/* @media (max-width: 768px) {
+  .project-container > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+} */
+
 .projects {
   display: flex;
   align-items: center;
@@ -372,6 +382,12 @@ li img {
   justify-content: center;
   gap: 2rem;
   margin-bottom: 10rem;
+}
+
+.project-container .one-two {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 .projects img {
