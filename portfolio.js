@@ -33,3 +33,27 @@ if (menuIcon && navbar) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-form");
+  if (!form) return;
+
+  const statusEl = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (statusEl) statusEl.textContent = "Sending...";
+
+    emailjs
+      .sendForm("IROy-XIXtKU0FyZUJ", "template_9cm4i4a", form) // e.g. ('service_123abc','template_456xyz')
+      .then(function () {
+        if (statusEl) statusEl.textContent = "Message sent successfully!";
+        form.reset();
+      })
+      .catch(function (error) {
+        if (statusEl)
+          statusEl.textContent = "Failed to send. Please try again.";
+        console.error("EmailJS error:", error);
+      });
+  });
+});
