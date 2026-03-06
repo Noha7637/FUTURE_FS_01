@@ -95,7 +95,9 @@ section {
 .typing {
   color: var(--primary-color);
   position: absolute;
-  animation: typing 11s steps(20) infinite, blink 0.8s infinite;
+  animation:
+    typing 11s steps(20) infinite,
+    blink 0.8s infinite;
   border-right: 0.5rem solid var(--primary-color);
   white-space: nowrap;
   overflow: hidden;
@@ -528,7 +530,9 @@ li img {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .contact-form button:hover {
@@ -567,4 +571,22 @@ li img {
 
 .goodbye .social-media a {
   text-decoration: none;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  background-color: #0056b3;
 }
