@@ -120,7 +120,7 @@ section {
   white-space: nowrap;
   overflow: hidden;
   box-sizing: content-box;
-  width: 22ch;
+  width: 23ch;
   padding-left: 1ch;
 }
 
@@ -372,16 +372,6 @@ li img {
 .highschoolbox .p3 {
   margin-top: 2rem;
 }
-
-/* _________projects section___________ */
-
-/* Optional: single column on small screens */
-/* @media (max-width: 768px) {
-  .project-container > * {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-} */
 
 .projects {
   display: flex;
