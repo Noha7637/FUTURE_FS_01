@@ -30,6 +30,24 @@ body {
   color: var(--text-color);
 }
 
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--primary-color);
+  color: var(--second-bg-color);
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 2px var(--primary-color);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--highlight-color);
+  box-shadow: 0 0 15px 3px var(--highlight-color);
+}
+
 section {
   min-height: 100vh;
   padding: 10rem 10% 2rem;
@@ -435,6 +453,24 @@ li img {
   margin-bottom: 4px;
   margin-left: 4px;
   margin-right: 4px;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.project-links .btn {
+  font-size: 1.4rem;
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 8px 1px var(--primary-color);
+}
+
+.project-links .btn:hover {
+  background: var(--highlight-color);
+  box-shadow: 0 0 12px 2px var(--highlight-color);
 }
 
 .project-container > *:hover {
