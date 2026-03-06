@@ -112,36 +112,36 @@ section {
 
 .typing {
   color: var(--primary-color);
-  font-weight: 600;
-  font-family: "Courier New", monospace; /* typewriter feel */
+  position: absolute;
+  animation:
+    typing 11s steps(36) infinite,
+    blink 0.8s infinite;
+  border-right: 0.5rem solid var(--primary-color);
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15rem solid var(--primary-color); /* cursor */
-  width: 0; /* initial width for typing */
-  display: inline-block;
-  animation:
-    typing 4s steps(38, end) forwards,
-    blink 0.8s step-start infinite;
+  box-sizing: content-box;
+  width: 36ch; /* match the character count */
+  padding-left: 1ch;
 }
 
-/* Typing animation: expand width to reveal full text */
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
-  to {
-    width: 38ch;
-  } /* number of characters in your text */
+  40% {
+    width: 36ch;
+  } /* grow to full length */
+  60% {
+    width: 36ch;
+  } /* hold it */
+  100% {
+    width: 0;
+  } /* then reset */
 }
 
-/* Blinking cursor */
 @keyframes blink {
-  0%,
-  100% {
-    border-color: transparent;
-  }
   50% {
-    border-color: var(--primary-color);
+    border-color: transparent;
   }
 }
 
