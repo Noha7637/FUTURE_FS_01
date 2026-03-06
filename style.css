@@ -114,13 +114,13 @@ section {
   color: var(--primary-color);
   position: absolute;
   animation:
-    typing 11s steps(32) infinite,
+    typing 11s steps(20) infinite,
     blink 0.8s infinite;
   border-right: 0.5rem solid var(--primary-color);
   white-space: nowrap;
   overflow: hidden;
   box-sizing: content-box;
-  width: 32ch;
+  width: 23ch;
   padding-left: 1ch;
 }
 
