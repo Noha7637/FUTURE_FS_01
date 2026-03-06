@@ -114,7 +114,7 @@ section {
   color: var(--primary-color);
   position: absolute;
   animation:
-    typing 11s steps(32) infinite,
+    typing 11s steps(36) infinite,
     blink 0.8s infinite;
   border-right: 0.5rem solid var(--primary-color);
   white-space: nowrap;
